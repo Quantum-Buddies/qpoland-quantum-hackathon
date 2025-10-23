@@ -101,3 +101,39 @@ This document lists the key references that informed the design, implementation,
 - **Qiskit tutorials and docs** guided the Trotterization circuits and feature-map/ansatz circuit designs used in `experiments/qiskit_circuits.py` and `experiments/qiskit_analysis.py`.
 - **TUDataset, GraKeL, PyG** references justify dataset handling and library choices in `qkernels/datasets.py`.
 - **Topological indices** justify classical descriptors included in the hybrid feature vector.
+
+---
+
+## Additional References (Authoritative)
+
+### Quantum Walks / CTQW Reviews and Books
+- Venegas-Andraca, S. E. (2012). Quantum walks: a comprehensive review. Quantum Information Processing, 11, 1015–1106.
+  - DOI: https://doi.org/10.1007/s11128-012-0432-5
+- Portugal, R. (2018). Quantum Walks and Search Algorithms (2nd ed.). Springer.
+  - Book: https://link.springer.com/book/10.1007/978-3-319-97813-6
+- Kempe, J. (2003). Quantum random walks — an introductory overview. Contemporary Physics, 44(4), 307–327.
+  - arXiv: https://arxiv.org/abs/quant-ph/0303081
+
+### CTQW Properties and Mixing
+- Godsil, C. (2011). State transfer on graphs. Discrete Mathematics, 312(1), 129–147.
+  - DOI: https://doi.org/10.1016/j.disc.2011.06.032
+- Ahmadi, O., Belk, R., Tamon, C. et al. (2003). On mixing in continuous-time quantum walks on some circulant graphs. Quantum Information and Computation.
+  - Preprint: https://arxiv.org/abs/quant-ph/0302103
+
+### Weisfeiler–Lehman Background
+- Grohe, M. (2017). Descriptive Complexity, Canonisation, and Definable Graph Structure Theory. Cambridge University Press. (Background on WL and logic.)
+  - Book: https://doi.org/10.1017/9781316672818
+
+### Datasets and Libraries (additional)
+- TU Dortmund Graph Kernel Datasets (official index by Morris et al.)
+  - https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
+- scikit-learn SVM (C-SVC with RBF kernel)
+  - User Guide: https://scikit-learn.org/stable/modules/svm.html
+- Qiskit (main documentation hub)
+  - https://docs.quantum.ibm.com/
+
+---
+
+## Cross-links
+
+- This file is linked from `README.md` and can be cited in `HACKATHON_REPORT.md`.
