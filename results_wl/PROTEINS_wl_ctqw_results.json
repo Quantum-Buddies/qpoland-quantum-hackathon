@@ -1,0 +1,14 @@
+{
+  "dataset": "PROTEINS",
+  "method": "WL+CTQW_Hybrid",
+  "kernel": "rbf",
+  "best_C": 10.0,
+  "n_graphs": 1113,
+  "n_features": 42,
+  "n_classes": 2,
+  "accuracy_mean": 0.7053088803088803,
+  "accuracy_std": 0.033838345350742066,
+  "f1_mean": 0.6717857833976233,
+  "f1_std": 0.04106733872704591,
+  "cv_folds": 10
+}

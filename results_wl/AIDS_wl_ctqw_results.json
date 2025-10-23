@@ -1,0 +1,14 @@
+{
+  "dataset": "AIDS",
+  "method": "WL+CTQW_Hybrid",
+  "kernel": "rbf",
+  "best_C": 10.0,
+  "n_graphs": 2000,
+  "n_features": 42,
+  "n_classes": 2,
+  "accuracy_mean": 0.9949999999999999,
+  "accuracy_std": 0.005916079783099621,
+  "f1_mean": 0.9920637766657487,
+  "f1_std": 0.009454391314152063,
+  "cv_folds": 10
+}

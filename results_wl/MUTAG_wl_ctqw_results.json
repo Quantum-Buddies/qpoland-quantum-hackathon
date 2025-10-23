@@ -1,0 +1,14 @@
+{
+  "dataset": "MUTAG",
+  "method": "WL+CTQW_Hybrid",
+  "kernel": "rbf",
+  "best_C": 1.0,
+  "n_graphs": 188,
+  "n_features": 42,
+  "n_classes": 2,
+  "accuracy_mean": 0.893859649122807,
+  "accuracy_std": 0.07041928880230805,
+  "f1_mean": 0.8808595164899513,
+  "f1_std": 0.07811770200627474,
+  "cv_folds": 10
+}
