@@ -1,0 +1,5 @@
+Dataset: MUTAG
+Graph index: 0
+Nodes: 17
+Gamma: 1.0
+Time range: [0, 6.0] with 200 steps
