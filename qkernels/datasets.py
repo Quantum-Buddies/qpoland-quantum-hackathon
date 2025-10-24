@@ -336,14 +336,14 @@ class MolecularGraphDataset:
 
     def summary(self):
         """Print dataset summary."""
-        print(f"\n{self.name} Dataset Summary:")
-        print(f"Number of graphs: {len(self.graphs)}")
-        print(f"Number of classes: {len(set(self.labels))}")
-        print(f"Class distribution: {self.get_class_distribution()}")
+        logger.info(f"\n{self.name} Dataset Summary:")
+        logger.info(f"Number of graphs: {len(self.graphs)}")
+        logger.info(f"Number of classes: {len(set(self.labels))}")
+        logger.info(f"Class distribution: {self.get_class_distribution()}")
 
         if self.graphs:
             sizes = [len(g.nodes) for g in self.graphs]
-            print("Graph sizes: min={}, max={}, avg={:.2f}".format(min(sizes), max(sizes), np.mean(sizes)))
+            logger.info("Graph sizes: min={}, max={}, avg={:.2f}".format(min(sizes), max(sizes), np.mean(sizes)))
 
 
 def load_all_datasets(data_dir='data'):

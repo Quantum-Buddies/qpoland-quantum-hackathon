@@ -29,17 +29,17 @@ def main():
     logger = logging.getLogger(__name__)
     
     logger.info("=" * 80)
-    logger.info("QPoland Hackathon - Quick Start Demo")
+    logger.info("QPoland Quantum Hackathon - Quick Start Validation")
     logger.info("=" * 80)
     
     # 1. Load MUTAG dataset
-    logger.info("\n📦 Step 1: Loading MUTAG dataset...")
+    logger.info("\nStep 1: Loading MUTAG dataset...")
     dataset = MolecularGraphDataset('MUTAG', data_dir='data')
     graphs, labels = dataset.get_graphs_and_labels()
     dataset.summary()
     
     # 2. Extract features
-    logger.info("\n🔬 Step 2: Extracting features...")
+    logger.info("\nStep 2: Extracting features...")
     
     # Try different feature extractors
     extractors = {
@@ -63,7 +63,7 @@ def main():
             logger.info(f"Number of features: {len(extractor.get_feature_names())}")
             
             # 3. Train and evaluate SVM with RBF kernel
-            logger.info(f"\n🎯 Step 3: Training SVM with RBF kernel...")
+            logger.info(f"\nStep 3: Training SVM with RBF kernel...")
             
             model = KernelSVM(kernel='rbf', C=1.0, gamma='scale')
             evaluator = ClassificationEvaluator(cv_folds=10, random_state=42)
@@ -75,17 +75,17 @@ def main():
             
             results[name] = cv_results
             
-            logger.info(f"✅ {name} Features:")
+            logger.info(f"Results for {name} Features:")
             logger.info(f"   Accuracy: {cv_results['accuracy_mean']:.4f} ± {cv_results['accuracy_std']:.4f}")
             logger.info(f"   F1-Score: {cv_results['f1_mean']:.4f} ± {cv_results['f1_std']:.4f}")
         
         except Exception as e:
-            logger.error(f"❌ {name} Features failed: {e}")
+            logger.error(f"Error with {name} Features: {e}")
             continue
     
     # 4. Print summary
     logger.info("\n" + "=" * 80)
-    logger.info("QUICK START DEMO COMPLETED")
+    logger.info("QUICK START VALIDATION COMPLETED")
     logger.info("=" * 80)
     
     if results:
@@ -93,7 +93,7 @@ def main():
         
         # Find best method
         best_method = max(results.items(), key=lambda x: x[1]['accuracy_mean'])
-        logger.info(f"\n🏆 Best Method: {best_method[0]}")
+        logger.info(f"\nBest Method: {best_method[0]}")
         logger.info(f"   Accuracy: {best_method[1]['accuracy_mean']:.4f} ± {best_method[1]['accuracy_std']:.4f}")
         logger.info(f"   F1-Score: {best_method[1]['f1_mean']:.4f} ± {best_method[1]['f1_std']:.4f}")
     

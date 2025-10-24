@@ -152,13 +152,13 @@ def compute_feature_importance(X, y, feature_names, method='mutual_info'):
 def print_results_table(results_dict, metrics=['accuracy_mean', 'f1_mean']):
     """
     Print results in a nice table format.
-    
+
     Args:
         results_dict: Dictionary of {name: results} pairs
         metrics: List of metrics to display
     """
     import pandas as pd
-    
+
     rows = []
     for name, results in results_dict.items():
         row = {'Method': name}
@@ -168,13 +168,13 @@ def print_results_table(results_dict, metrics=['accuracy_mean', 'f1_mean']):
                 if f"{metric.replace('_mean', '_std')}" in results:
                     row[metric] += f" ± {results[metric.replace('_mean', '_std')]:.4f}"
         rows.append(row)
-    
+
     df = pd.DataFrame(rows)
-    print("\n" + "=" * 80)
-    print("RESULTS SUMMARY")
-    print("=" * 80)
-    print(df.to_string(index=False))
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("RESULTS SUMMARY")
+    logger.info("=" * 80)
+    logger.info(f"\n{df.to_string(index=False)}")
+    logger.info("=" * 80)
 
 
 def save_experiment_config(config, filepath):

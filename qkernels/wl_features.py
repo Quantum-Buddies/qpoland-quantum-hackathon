@@ -322,22 +322,22 @@ if __name__ == "__main__":
     G = nx.karate_club_graph()
     
     # Test WL features
-    print("Testing Weisfeiler-Lehman features...")
+    logger.info("Testing Weisfeiler-Lehman features...")
     wl_extractor = WeisfeilerLehmanFeatureExtractor(h=3)
     wl_feat = wl_extractor.extract_features(G)
-    print(f"WL features shape: {wl_feat.shape}")
-    print(f"WL features: {wl_feat[:6]}")
+    logger.info(f"WL features shape: {wl_feat.shape}")
+    logger.info(f"WL features: {wl_feat[:6]}")
     
     # Test advanced CTQW features
-    print("\nTesting Advanced CTQW features...")
+    logger.info("Testing Advanced CTQW features...")
     ctqw_extractor = AdvancedCTQWFeatureExtractor()
     ctqw_feat = ctqw_extractor.extract_features(G)
-    print(f"CTQW features shape: {ctqw_feat.shape}")
-    print(f"CTQW features (first 6): {ctqw_feat[:6]}")
+    logger.info(f"CTQW features shape: {ctqw_feat.shape}")
+    logger.info(f"CTQW features (first 6): {ctqw_feat[:6]}")
     
     # Test hybrid features
-    print("\nTesting Hybrid WL+CTQW features...")
+    logger.info("Testing Hybrid WL+CTQW features...")
     hybrid_extractor = WLCTQWHybridFeatureExtractor(wl_iterations=3)
     hybrid_feat = hybrid_extractor.extract_features(G)
-    print(f"Hybrid features shape: {hybrid_feat.shape}")
-    print(f"Total features: {len(hybrid_extractor.get_feature_names())}")
+    logger.info(f"Hybrid features shape: {hybrid_feat.shape}")
+    logger.info(f"Total features: {len(hybrid_extractor.get_feature_names())}")

@@ -277,8 +277,8 @@ def main():
         output_dir=args.output_dir
     )
     
-    print("\n✅ Benchmark completed successfully!")
-    print(f"📊 Results saved to: {args.output_dir}/")
+    print("\nBenchmark completed successfully!")
+    print(f"Results saved to: {args.output_dir}/")
 
 
 if __name__ == "__main__":
