@@ -1,6 +1,9 @@
 # 🏆 Quantum-Enhanced Molecular Graph Classification
 
-**Complete implementation for the QPoland Quantum Hackathon 2025**
+## **Complete implementation for the QPoland Quantum Hackathon 2025**
+
+### Demo Video Link 1: [https://drive.google.com/file/d/1qngQwRbQDNiIV5E2dqf8I_KV97NDPFOS/view?usp=sharing](https://imperiallondon-my.sharepoint.com/:f:/g/personal/smi124_ic_ac_uk/EsFGOAxBt8hAtUpjSsi-tJQBxb7i5xR6p1nGxgStG9VhYw?tdid=0705f537-07e0-44cb-8698-15831f08e273)
+### Demo Video Link 2: https://drive.google.com/file/d/1qngQwRbQDNiIV5E2dqf8I_KV97NDPFOS/view?usp=sharing
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![QuriParts](https://img.shields.io/badge/QuriParts-Quantum-purple.svg)](https://quri-parts.qunasys.com/)
